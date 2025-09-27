@@ -47,12 +47,12 @@ function game(id){
     if(turn === 'x' && element.innerHTML == '') {
         element.innerHTML = 'X';
         turn = 'o';
-        title.innerHTML = 'O';
+        title.innerHTML = 'O Turn';
     }
     else if(turn === 'o' && element.innerHTML == '') {
         element.innerHTML = 'O';
         turn = 'x';
-        title.innerHTML = 'X';
+        title.innerHTML = 'X Turn';
     }
      winner();
 }
@@ -70,3 +70,4 @@ function resetGame() {
         element.style.background = 'linear-gradient(135deg, #ab597f 0%, #ff253ec9 100%)';
     }
 }
+
