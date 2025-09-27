@@ -8,7 +8,6 @@ Play against a friend in turns and see who wins!
 - Two-player turn-based gameplay.
 - Highlights winning combination with a green background.
 - Displays the winner and reloads the game automatically.
-- Responsive hover effect on squares.
 - Simple UI with gradient styles.
 
 ---
@@ -20,5 +19,6 @@ Play against a friend in turns and see who wins!
 
 ![XO Game Demo](./xo-game.gif)
 ---
+
 
 
