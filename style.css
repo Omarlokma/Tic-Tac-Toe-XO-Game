@@ -42,7 +42,6 @@ span {
 }
 
 .square:hover {
-    background: linear-gradient(-110deg, #a7acbe 0%, #906db3 100%);
     cursor: pointer;
 }
 
@@ -85,4 +84,3 @@ span {
         font-size: 18px;
     }
 }
-
