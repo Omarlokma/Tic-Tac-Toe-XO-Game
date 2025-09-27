@@ -14,10 +14,11 @@ Play against a friend in turns and see who wins!
 ---
 
 ## 🎮 Demo
---▶️[Try Now](https://omarlokma.github.io/Tic-Tac-Toe-XO-game/)
+--▶️[Try Now](https://omarlokma.github.io/Tic-Tac-Toe-XO-Game/)
 
 
 
 ![XO Game Demo](./xo-game.gif)
 ---
+
 
