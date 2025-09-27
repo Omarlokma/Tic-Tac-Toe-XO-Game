@@ -1,14 +1,15 @@
 let title = document.querySelector('.title');
 let turn = 'x'
 let squares = [];
+let gameEnded = false;
 function endWinner (num1 , num2 , num3) {
+    gameEnded = true;
     title.innerHTML =  `${squares[num1]} winner`;
     document.getElementById('item' + num1).style.background = '#009f20ff';
     document.getElementById('item' + num2).style.background = '#009f20ff';
     document.getElementById('item' + num3).style.background = '#009f20ff';
 
     setInterval(function() {title.innerHTML += '.'}, 1000);
-    setTimeout(function(){location.reload()} , 4000)
 }
 function winner(){
     for(let i =1 ; i<10 ; i++) {
@@ -46,6 +47,8 @@ function winner(){
     }
 }
 function game(id){
+    if(gameEnded) return; 
+    
     let element = document.getElementById(id);
     if(turn === 'x' && element.innerHTML == '') {
         element.innerHTML = 'X';
@@ -58,4 +61,18 @@ function game(id){
         title.innerHTML = 'X';
     }
      winner();
+}
+
+function resetGame() {
+    // Reset game state
+    turn = 'x';
+    gameEnded = false;
+    title.innerHTML = '<span> X O</span> Game';
+    
+    // Clear all squares
+    for(let i = 1; i <= 9; i++) {
+        let element = document.getElementById('item' + i);
+        element.innerHTML = '';
+        element.style.background = 'linear-gradient(135deg, #ab597f 0%, #ff253ec9 100%)';
+    }
 }
