@@ -7,7 +7,7 @@ Play against a friend in turns and see who wins!
 ## 🚀 Features
 - Two-player turn-based gameplay.
 - Highlights winning combination.
-- Displays the winner and reloads the game automatically.
+- Displays the winner and reloads the game.
 - Simple UI with gradient styles.
 
 ---
@@ -19,6 +19,7 @@ Play against a friend in turns and see who wins!
 
 ![XO Game Demo](./xo-game.gif)
 ---
+
 
 
 
